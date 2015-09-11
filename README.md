@@ -12,7 +12,7 @@ Here are the short desription. For more details check the scripts source code.
     * MKIMAGE\_PATH - path to the mkimage utility from U-Boot.
     and run it to start compilation. Useful command:
 
-    `$ ( time my_build.sh ) |& tee \`date +%M%H\_%F\`-build-log.txt`
+    ``$ ( time my\_build.sh ) |& tee `date +%M%H\_%F`-build-log.txt``
 1. constants\_instead\_of\_macros.diff - this is a modification
     of the kernel to use constants instead of macros;
 1. disassemble.sh - the script converts raw machine code to source
@@ -26,8 +26,8 @@ Here are the short desription. For more details check the scripts source code.
     For the details check this great article - https://code.google.com/p/milestone-overclock/wiki/Disassembly;
 1. determine\_size\_of\_functions.sh - the script is intended to
     be executed on the tablet directly. It searches all functions
-    with the substring 'imap' in the /proc/kallsyms and
-    calculates their sizes in bytes.
+    with the substring 'imap' in the /proc/kallsyms,
+    calculates their sizes in bytes and prints the result to stdout.
 
 # Links
 Here https://drive.google.com/open?id=0Bw5iSiWPdccTdC1sVEdkUkFYZ2M
